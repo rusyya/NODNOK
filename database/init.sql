@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS calculations (
+    id SERIAL PRIMARY KEY,
+    operation_type VARCHAR(10) NOT NULL,
+    value_a INTEGER NOT NULL,
+    value_b INTEGER NOT NULL,
+    result INTEGER NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
